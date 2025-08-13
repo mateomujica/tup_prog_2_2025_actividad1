@@ -38,15 +38,27 @@ namespace Ej1.Models
             return volumen;
         }
 
+        //public string Describir()
+        //{
+        //    double area = CalcularArea();
+        //    double volumen = CalcularVolumen();
+
+        //    return $"Area; {area}, Volumen {volumen}";
+        //}
         public string Describir()
         {
-            double area = CalcularArea();
-            double volumen = CalcularVolumen();
+            string json = $@"{{
+                ""Figura"": ""Ortoedro"",
+                ""Ancho base"": {Bases[0].Ancho},
+                ""Largo base"": {Bases[0].Largo},
+                ""Largo lateral"": {Laterales[0].Largo},
+                ""Área"": {this.CalcularArea()},
+                ""Volumen"": {this.CalcularVolumen()}
+            }}";
+            return json;
 
-            return $"Area; {area}, Volumen {volumen}";
-            
         }
-        
+
     }
     
 }

@@ -12,9 +12,11 @@ namespace Ej1
         
         private void btnPrueba_Click(object sender, EventArgs e)
         {
-            Ortoedro objeto = new Ortoedro(7,7,21);
+            Ortoedro objeto = new Ortoedro(7, 7, 21);
             tbx1.Text = objeto.Describir();
-            tbx1.Text = objeto.Describir2();
+
+            //Cubo objeto1 = new Cubo(2);
+            //tbx1.Text = objeto1.Describir();
         }
     }
 }
