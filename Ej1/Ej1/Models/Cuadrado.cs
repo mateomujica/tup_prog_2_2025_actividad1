@@ -25,7 +25,8 @@ namespace Ej1.Models
 
         public string Describir()
         {
-            string json = $@"{{
+            string json = $@"
+            {{
                    ""Tipo"": Cuadrado, 
                    ""Largo"": 3, 
                    ""Ancho"": 3,
